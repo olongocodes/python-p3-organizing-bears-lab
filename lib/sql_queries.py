@@ -1,6 +1,6 @@
 select_all_female_bears_return_name_and_age = """
     
-    SELECT name, age FROM bears WHERE gender = F; 
+    SELECT name, age FROM bears WHERE sex = 'F'; 
 """
 
 
@@ -20,5 +20,5 @@ select_oldest_bear_and_returns_name_and_age = """
 """
 select_youngest_bear_and_returns_name_and_age = """
 
-    SELECT name, age FROM bears ORDER BY age ASC LIMIT 1;
+    SELECT name, age FROM bears ORDER BY age ASC LIMIT 1; 
 """
